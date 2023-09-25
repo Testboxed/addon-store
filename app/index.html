@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testboxed</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="left">
+            <a class="tb-logo">Testboxed</a>
+            <a>News</a>
+            <a>Docs</a>
+        </div>
+        <div class="right">
+            <select>
+                <option>All</option>
+                <option>Gamemode</option>
+                <option>Map</option>
+                <option>Script</option>
+              </select>
+            <input type="text" placeholder="Search some addons">
+        </div>
+    </nav>
+    <div class="navtop">
+        <h1>dfzlo.ru</h1>
+        <p>This is a website for finding addons and gamemodes for Testboxed</p>
+    </div>
+    <div id="content">
+        <!-- <h1>Gamemodes</h1>
+        <div class="addon-group">
+            <div class="addon-card" onclick="window.open('view-addon.html', '_blank', 'popup=true height=600 width=800')">
+                <img src="/img/gamemode/dfc-team/sandbox.png">
+                <h3>Sandbox</h3>
+                <p>DFC Team</p>
+            </div>
+            <div class="addon-card" onclick="window.open('view-addon.html', '_blank', 'popup=true height=600 width=800')">
+                <img src="/img/gamemode/dfc-team/pixels.png">
+                <h3>Pixels</h3>
+                <p>DFC Team</p>
+            </div>
+            <div class="addon-card" onclick="window.open('view-addon.html', '_blank', 'popup=true height=600 width=800')">
+                <img src="/img/gamemode/dfc-team/models-sandbox.png">
+                <h3>Models Sandbox</h3>
+                <p>DFC Team</p>
+            </div>
+            <div class="addon-card" onclick="window.open('view-addon.html', '_blank', 'popup=true height=600 width=800')">
+                <img src="/img/gamemode/dfc-team/ai-lab.png">
+                <h3>AI Lab</h3>
+                <p>DFC Team</p>
+            </div>
+        </div> -->
+        {{ gamemodes | safe }}
+    </div>
+    <div id="connect-window" hidden="hidden">
+        <h1>Disconnected, trying to reconnect...</h1>
+    </div>
+</body>
+</html>

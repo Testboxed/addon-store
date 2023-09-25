@@ -1,0 +1,157 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    background-color: #111111;
+    color: white;
+
+    margin: 0;
+}
+
+* {
+    outline: 0;
+}
+
+nav {
+    padding: 6px;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    bottom: 0;
+    background-color: #333333;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.navtop {
+    padding: 6px;
+    position: sticky;
+    padding-left: 10vw;
+    max-width: 100%;
+    background-color: #303030;
+}
+
+input[type="text"],
+button,
+select {
+    border: 0;
+    border-radius: 3px;
+    padding: 6px;
+    background-color: #222222;
+    color: white;
+    transition: all 0.1s;
+}
+
+button:hover,
+.addon-card:hover {
+    background-color: #333333;
+}
+
+select:hover {
+    background-color: #282828;
+}
+
+button:active,
+select:active {
+    background-color: #444444;
+}
+
+nav .left {
+    text-align: left;
+}
+
+nav .right {
+    text-align: right;
+}
+
+#content {
+    position: static;
+    margin-left: 30px;
+}
+
+#content .addon-group {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.addon-card {
+    padding: 6px;
+    padding-top: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
+
+    margin-right: 20px;
+    margin-bottom: 20px;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    min-width: 200px;
+    max-width: fit-content;
+    max-height: fit-content;
+    background-color: #222222;
+    transition: all 0.2s;
+    box-shadow: 4px 4px 8px -8px rgba(47, 47, 47, 0.2);
+}
+
+.addon-card img {
+    border-radius: 3px;
+}
+
+.addon-card:hover {
+    box-shadow: 4px 4px 8px 0px rgba(47, 47, 47, 0.2);
+}
+
+.addon-card img {
+    height: 120px;
+    width: 200px;
+}
+
+#connect-window {
+    top: 0;
+
+    height: 100%;
+    width: 100%;
+
+    position: absolute;
+    text-align: center;
+
+    backdrop-filter: blur(10px);
+
+    animation-duration: 2s;
+    animation-name: blurfade;
+}
+
+#connect-window * {
+    transform: translateY(45vh);
+}
+  
+@keyframes blurfade {
+    from {
+        backdrop-filter: blur(0px);
+    }
+  
+    to {
+        backdrop-filter: blur(10px);
+    }
+}
+
+.main-info {
+    display: flex;
+    align-items: center;
+}
+  
+.main-info img {
+    min-width: 100px;
+    min-height: 100px;
+
+    max-width: 100px;
+    max-height: 100px;
+
+    margin-right: 20px;
+}
